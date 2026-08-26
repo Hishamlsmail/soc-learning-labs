@@ -49,6 +49,7 @@ To reduce the attack surface and prevent unauthorized remote management attempts
 | **Destination Port** | `22 (SSH)` | Target standard Secure Shell access port |
 
 <img width="3840" height="2400" alt="Screenshot 2026-08-26 194127" src="https://github.com/user-attachments/assets/eba7cd64-d14d-439b-8fb2-de388c37b194" />
+<img width="3840" height="2400" alt="Screenshot 2026-08-26 195301" src="https://github.com/user-attachments/assets/6419bd54-a479-4587-8952-80ededb94eb7" />
 
 ---
 
