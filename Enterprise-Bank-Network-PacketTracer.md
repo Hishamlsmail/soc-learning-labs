@@ -31,7 +31,7 @@ This project presents the full design, implementation, and routing verification 
 ## ⚙️ Core Cisco IOS Configuration Excerpt (HQ Router)
 
 ### 1. Interface IP & Clock Rate Setup
-```cisco
+cisco
 enable
 configure terminal
 interface GigabitEthernet0/0
@@ -44,10 +44,10 @@ interface Serial0/2/0
  ip address 10.0.1.1 255.255.255.252
  clock rate 64000
  no shutdown
-```[cite: 1]
+[cite: 1]
 
 ### 2. Dynamic RIPv2 Configuration
-```cisco
+cisco
 router rip
  version 2
  no auto-summary
@@ -55,7 +55,7 @@ router rip
  network 10.0.0.0
  network 10.0.1.0
  network 10.0.2.0
-```[cite: 1]
+[cite: 1]
 
 ---
 
@@ -69,11 +69,10 @@ Confirmed route learning across network segments via RIP (`R` entries)[cite: 1]:
 ### 2. End-to-End ICMP Reachability Test (`ping`)
 Verified successful end-to-end connectivity between branch hosts and HQ infrastructure[cite: 1]:
 
-<!-- DROP SCREENSHOT 3 HERE (Screenshot 2026-08-26 223026.jpg - Ping Command) -->
+<!-- DROP SCREENSHOT 3 HERE (Screenshot 2026-08-26 223026.jpg - Ping Command) --> 
 <img width="3840" height="2400" alt="Screenshot 2026-08-26 223026" src="https://github.com/user-attachments/assets/5364256d-e837-4c51-957a-c8658afe0e2a" />
 
 ---
-
 ## 📈 Key Technical Takeaways
 * **VLSM & Custom Subnetting:** Designing `/29` subnets for restricted LAN hosts and `/30` point-to-point WAN links to minimize IP waste[cite: 1].
 * **Dynamic Routing Protocols:** Disabling classful auto-summarization (`no auto-summary`) in RIPv2 to support discontinuous subnets[cite: 1].
