@@ -49,8 +49,6 @@ To reduce the attack surface and prevent unauthorized remote management attempts
 To verify the policy enforcement, an outbound connection attempt was initiated from the Host OS using native SSH CLI.
 
 ### Command Executed:
-```bash
-ssh admin@192.168.76.136
+`ssh admin@192.168.76.136`
 
-
-<img width="3840" height="2400" alt="Screenshot 2026-08-26 050027" src="https://github.com/user-attachments/assets/7efeda8d-f7a0-4931-835d-3f2582aca97f" />
+<img src="https://github.com/user-attachments/assets/7efeda8d-f7a0-4931-835d-3f2582aca97f" />
