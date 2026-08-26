@@ -60,7 +60,7 @@ To verify the policy enforcement, an outbound connection attempt was initiated f
 `ssh admin@192.168.76.136`
 
 ### Proof of Enforcement (Connection Timed Out):
-<img width="3840" height="2400" alt="Screenshot 2026-08-26 050027" src="https://github.com/user-attachments/assets/c8e2814c-4521-43c0-8c0c-c8063ff17119" />
+<img width="3840" height="2400" alt="Screenshot 2026-08-26 195301" src="https://github.com/user-attachments/assets/d32904a2-54fd-4681-9d05-a28a6c499ad6" />
 
 ---
 
