@@ -22,10 +22,16 @@ This lab demonstrates the installation, configuration, and practical verificatio
 * Allocated **1 GB RAM**, **1 CPU Core**, and **11 GB Hard Disk Space**.
 * Established the initial network bridge using **NAT Mode** for the WAN interface.
 
+<img width="3840" height="2400" alt="Screenshot 2026-08-26 185734" src="https://github.com/user-attachments/assets/a2aea279-9a34-4fa4-86c3-1a81627125b4" />
+
+---
+
 ### 2. Initial Setup & WebGUI Access
 * Booted the virtual machine and completed the core FreeBSD deployment.
 * Obtained the primary WAN IP address assigned dynamically: `192.168.76.136`.
 * Successfully accessed the pfSense Web GUI administration dashboard via a host browser.
+
+<img width="3840" height="2400" alt="Screenshot 2026-08-26 191437" src="https://github.com/user-attachments/assets/e949651e-c3eb-4724-ac4f-e95380716277" />
 
 ---
 
@@ -42,6 +48,8 @@ To reduce the attack surface and prevent unauthorized remote management attempts
 | **Source** | `Any` | Block incoming attempts from any remote host |
 | **Destination Port** | `22 (SSH)` | Target standard Secure Shell access port |
 
+<img width="3840" height="2400" alt="Screenshot 2026-08-26 194127" src="https://github.com/user-attachments/assets/eba7cd64-d14d-439b-8fb2-de388c37b194" />
+
 ---
 
 ## 🧪 Verification & Proof of Concept (PoC)
@@ -51,4 +59,12 @@ To verify the policy enforcement, an outbound connection attempt was initiated f
 ### Command Executed:
 `ssh admin@192.168.76.136`
 
-<img src="https://github.com/user-attachments/assets/7efeda8d-f7a0-4931-835d-3f2582aca97f" />
+### Proof of Enforcement (Connection Timed Out):
+<img width="3840" height="2400" alt="Screenshot 2026-08-26 050027" src="https://github.com/user-attachments/assets/c8e2814c-4521-43c0-8c0c-c8063ff17119" />
+
+---
+
+## 📈 Key Takeaways & Learned Skills
+* **Stateful Packet Inspection (SPI):** Hands-on experience creating, applying, and committing rules via the GUI.
+* **Virtualization Troubleshooting:** Resolving boot issues related to archive extraction (`.iso.gz`) and virtual BIOS settings.
+* **Attack Surface Reduction:** Implementing security hardening principles by blocking unnecessary public management ports.
